@@ -131,7 +131,7 @@ $(document).ready(function () {
 
       $.ajax({
         type: "POST",
-        url: "http://127.0.0.1:5500/form.php",
+        url: "../form.php",
         data: $(this).serialize(),
         success: function (response) {
           console.log(responsive);
@@ -140,7 +140,7 @@ $(document).ready(function () {
           console.error(xhr.responseText);
         },
       });
-    });
+    });``
   }
 
   if ($(".map").length > 0) {
