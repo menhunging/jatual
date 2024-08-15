@@ -2228,7 +2228,7 @@ h4,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 43px;
+  margin-top: 82px;
 }
 @media (max-width: 767px) {
   .map-section ul {
@@ -2249,8 +2249,10 @@ h4,
 .map-section li span + span {
   margin-top: 5px;
 }
-.map-section li + li {
-  margin-top: 40px;
+@media (max-width: 767px) {
+  .map-section li + li {
+    margin-top: 40px;
+  }
 }
 .map-section a {
   text-decoration: underline;
