@@ -140,7 +140,8 @@ $(document).ready(function () {
           console.error(xhr.responseText);
         },
       });
-    });``
+    });
+    ``;
   }
 
   if ($(".map").length > 0) {
