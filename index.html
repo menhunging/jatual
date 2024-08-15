@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
+  <title>Главная</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#030e2c">
+  <meta name="msapplication-TileColor" content="#030e2c">
+  <meta name="theme-color" content="#030e2c">
+
+  <link rel="stylesheet" type="text/css" href="./fonts/stylesheet.css" />
+
+  <link rel="stylesheet" type="text/css" href="./libs/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="./libs/selectric/selectric.css" />
+  <link rel="stylesheet" type="text/css" href="./libs/micromodal/micromodal.css" />
+  <link rel="stylesheet" type="text/css" href="./libs/fancybox/fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="./libs/aos/aos.css" />
+
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <header class="header">
+      <div class="logo">
+        <a href="/">
+          <img src="./img/svg/logo.svg" alt="logo">
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="grettings">
+        <div class="container">
+          <div class="grettings__inner">
+            <picture class="grettings__media picture">
+              <source type="image/webp" srcset="./img/girl.webp" />
+              <img src="./img/girl.png" alt="" />
+            </picture>
+            <div class="grettings__content">
+              <picture class="picture">
+                <source type="image/webp" srcset="./img/logo-gold.webp" />
+                <img src="./img/logo-gold.png" alt="" />
+              </picture>
+              <span class="grettings__title">СКОРО ОТКРЫТИЕ</span>
+              <span class="grettings__desc">История бесконечной любви</span>
+              <a href="#" class="btn btn--yellow">НАЗНАЧИТЬ ВСТРЕЧУ</a>
+            </div>
+          </div>
+        </div>
+        <picture class="grettings__picture picture">
+          <source type="image/webp" srcset="./img/pic-grettings.webp" />
+          <img src="./img/pic-grettings.jpg" alt="" />
+        </picture>
+      </section>
+      <section class="product">
+        <section class="product-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-title="СЕРЬГИ">
+              <picture class="picture">
+                <source type="image/webp" srcset="./img/product1.webp" />
+                <img src="./img/product1.png" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide" data-title="Кольца">
+              <picture class="picture">
+                <source type="image/webp" srcset="./img/product2.webp" />
+                <img src="./img/product2.png" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide" data-title="ПОДВЕСКИ">
+              <picture class="picture">
+                <source type="image/webp" srcset="./img/product3.webp" />
+                <img src="./img/product3.png" alt="" />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-fractions"></div>
+        </section>
+        <div class="swiper-controls">
+          <button class="swiperBtnPrev"></button>
+          <span class="swiper-controls__text prev">СЕРЬГИ</span>
+          <span class="swiper-controls__text next">ПОДВЕСКИ</span>
+          <button class="swiperBtnNext"></button>
+        </div>
+      </section>
+      <section class="text-section">
+        <div class="text-section__content">
+          <span class="text-invis text-invis--jarual"></span>
+          <h2 class="caption">ОТКРОЙТЕ ДЛЯ СЕБЯ КРАСОТУ JATUAL PARIS</h2>
+          <p>
+            Мы предлагаем уникальные возможности, которые переходят границы обычного ювелирного мира. У нас есть
+            способность создать камень мечты с самыми высокими природными характеристиками и воплотить украшение вашей
+            мечты в реальность.
+          </p>
+          <span class="text-invis text-invis--paris"></span>
+        </div>
+      </section>
+      <section class="quote">
+        <p>
+          Историческая коллекция Le cœur de Paris Сердце Парижа создана в лучших традициях французской ювелирной школы
+        </p>
+        <picture class="quote__picture picture">
+          <source type="image/webp" srcset="./img/pic-quote.webp" />
+          <img src="./img/pic-quote.png" alt="" />
+        </picture>
+
+        <picture class="quote__img1 picture">
+          <source type="image/webp" srcset="./img/quote1.webp" />
+          <img src="./img/quote1.png" alt="" />
+        </picture>
+        <picture class="quote__img2 picture">
+          <source type="image/webp" srcset="./img/quote2.webp" />
+          <img src="./img/quote2.png" alt="" />
+        </picture>
+        <picture class="quote__img3 picture">
+          <source type="image/webp" srcset="./img/quote3.webp" />
+          <img src="./img/quote3.png" alt="" />
+        </picture>
+      </section>
+      <section class="video-about">
+        <h2 class="caption">ВИДЕО О НАС</h2>
+        <div class="video">
+          <video width="100%" height="100%" poster="../../img/video-poster.webp" playsinline loop muted />
+          <source src="../../img/video/video.webm" type='video/webm; codecs="vp8, vorbis"'>
+          </video>
+          <div class="video__btn video__btn--play">
+            <svg class="icon-play" width="33" height="38" viewBox="0 0 33 38" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M31.5 20.732C32.8333 19.9622 32.8333 18.0378 31.5 17.268L3.75 1.24648C2.41666 0.476677 0.75 1.43893 0.75 2.97853V35.0215C0.75 36.5611 2.41667 37.5233 3.75 36.7535L31.5 20.732Z"
+                fill="white" />
+            </svg>
+
+            <svg class="icon-paused" width="18" height="18" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill="#fff"
+                d="M17.25 1.5V16.5C17.2495 16.8977 17.0914 17.279 16.8102 17.5602C16.529 17.8414 16.1477 17.9995 15.75 18H12.375C11.9773 17.9995 11.596 17.8414 11.3148 17.5602C11.0336 17.279 10.8755 16.8977 10.875 16.5V1.5C10.8755 1.10231 11.0336 0.721048 11.3148 0.439842C11.596 0.158636 11.9773 0.000454817 12.375 0H15.75C16.1477 0.000454817 16.529 0.158636 16.8102 0.439842C17.0914 0.721048 17.2495 1.10231 17.25 1.5ZM5.625 0H2.25C1.85231 0.000454817 1.47105 0.158636 1.18984 0.439842C0.908636 0.721048 0.750455 1.10231 0.75 1.5V16.5C0.750455 16.8977 0.908636 17.279 1.18984 17.5602C1.47105 17.8414 1.85231 17.9995 2.25 18H5.625C6.02269 17.9995 6.40395 17.8414 6.68516 17.5602C6.96636 17.279 7.12455 16.8977 7.125 16.5V1.5C7.12455 1.10231 6.96636 0.721048 6.68516 0.439842C6.40395 0.158636 6.02269 0.000454817 5.625 0Z" />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="container">
+          <form id="site_form" method="post" action="" class="form-section__left">
+            <h2 class="caption">Напишите нам</h2>
+            <p>
+              Для получения более подробной информации напишите нам и мы ответим Вам в ближайшее время. возможно
+              кратчайшие сроки
+            </p>
+            <div class="input-list">
+              <div class="input-item">
+                <input type="text" placeholder="ИМЯ" required name="name" value="тест">
+              </div>
+              <div class="input-item">
+                <input type="email" placeholder="E-MAIL" required name="email" value="sashader95@gmail.com">
+              </div>
+              <div class="input-item">
+                <input type="text" placeholder="ТЕЛЕФОН" class="phone-input" required name="phone"
+                  value="+7(123) 123-12-12">
+              </div>
+              <div class="input-item">
+                <input type="text" placeholder="ВАШ ВОПРОС" required name="message" value="Вопрос такой вот">
+              </div>
+            </div>
+            <button type="submit" class="btn btn--dark">ОТПРАВИТЬ</button>
+          </form>
+          <picture class="picture">
+            <source type="image/webp" srcset="./img/paris.webp" />
+            <img src="./img/paris.png" alt="" />
+          </picture>
+        </div>
+      </section>
+      <section class="map-section">
+        <div class="container">
+          <h2 class="caption">jatual paris</h2>
+          <ul>
+            <li>
+              <span class="cap">москва</span>
+              <span class="title">Контакты</span>
+              <span>Телефон: <a href="tel:+79060713947">+ 7 (906) 071-39-47</a></span>
+              <span>E-mail: <a href="mailto:info@jatual.fr">info@jatual.fr</a></span>
+            </li>
+            <li>
+              <span class="cap">париж</span>
+              <span class="title">Контакты</span>
+              <span>Телефон: <a href="tel:+34648726487">+3 (4648) 72-64-87</a></span>
+              <span>E-mail: <a href="mailto:info@jatual.fr">info@jatual.fr</a></span>
+            </li>
+            <li>
+              <span class="cap">дубай</span>
+              <span class="title">Контакты</span>
+              <span>Телефон: <a href="tel:+34648726487">+3 (4648) 72-64-87</a></span>
+              <span>E-mail: <a href="mailto:info@jatual.fr">info@jatual.fr</a></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577332.5659375489!2d36.726215352370396!3d55.58103354740963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sby!4v1723737144873!5m2!1sru!2sby"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </section>
+      <section class="coop-section">
+        <h2 class="caption">ПО ВОПРОСАМ СОТРУДНИЧЕСТВА</h2>
+        <a href="tel:+79060713947">+ 7 (906) 071-39-47</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="logo">
+        <a href="/">
+          <img src="./img/svg/logo.svg" alt="logo">
+        </a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#" class="social-link facebook"></a>
+        </li>
+        <li>
+          <a href="#" class="social-link insta"></a>
+        </li>
+        <li>
+          <a href="#" class="social-link telegram"></a>
+        </li>
+        <li>
+          <a href="#" class="social-link mail"></a>
+        </li>
+      </ul>
+      <div class="copyRight">&copy; <span class="thisYear"></span> JATUAL PARIS</div>
+    </footer>
+  </div>
+
+  <div class="micromodal-slide modal" id="modal-success" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"
+                fill="black" />
+            </svg>
+
+          </button>
+          <div class="modal__content" autocomplete="off">
+            <div class="modal-custom">
+              <h2 class="caption modals-caption">Спасибо</h2>
+              <p>Какой то текст</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="./libs/jquery/jquery-3.7.1.min.js"></script>
+<script src="./libs/swiper/swiper-bundle.min.js"></script>
+<script src="./libs/selectric/jquery.selectric.min.js"></script>
+<script src="./libs/micromodal/micromodal.min.js"></script>
+<script src="./libs/tabslet/jquery.tabslet.min.js"></script>
+<script src="./libs/fancybox/fancybox.umd.js"></script>
+<script src="./libs/inputmask/jquery.inputmask.min.js"></script>
+<script src="./libs/aos/aos.js"></script>
+
+<!-- ключ от Natuizi -->
+<!-- <script src="https://api-maps.yandex.ru/v3/?apikey=574045b8-d039-4fb8-addb-e6a182b6661e&lang=ru_RU"></script> -->
+
+<script src="./js/main.js"></script>
+
+</html>

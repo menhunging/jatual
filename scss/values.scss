@@ -1,0 +1,90 @@
+$fontMain: "Cormorant";
+$fontCarolina: "Carolina";
+$fontFuturaMediumC: "FuturaMediumC";
+$fontFuturaBookC: "FuturaBookC";
+$fontAlegreya: "Alegreya";
+
+$colorWhite: rgba(255, 255, 255, 1);
+$colorWhite-a8: rgba(255, 255, 255, 0.8);
+$colorWhite-a5: rgba(255, 255, 255, 0.5);
+$colorWhite-a4: rgba(255, 255, 255, 0.4);
+$colorWhite-a2: rgba(255, 255, 255, 0.2);
+
+$colorBlack: rgba(33, 33, 33, 1);
+$colorBlack-a7: rgba(33, 33, 33, 0.7);
+$colorBlack-a5: rgba(33, 33, 33, 0.5);
+$colorBlack-a4: rgba(33, 33, 33, 0.4);
+$colorBlack-a2: rgba(33, 33, 33, 0.2);
+$colorBlack-a05: rgba(33, 33, 33, 0.05);
+
+$colorYellow: #ffc9ab;
+$colorGray: #f0f0f0;
+
+$responsive1599: "1599px";
+$responsive1439: "1439px";
+$responsive1279: "1279px";
+$responsive1023: "1023px";
+$responsive767: "767px";
+$responsive639: "639px";
+$responsive479: "479px";
+$responsive389: "389px";
+
+@mixin boxShadowDefault {
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+// @media responsive
+
+@mixin responsiveMinWidth768 {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin responsive1599 {
+  @media (max-width: $responsive1599) {
+    @content;
+  }
+}
+
+@mixin responsive1439 {
+  @media (max-width: $responsive1439) {
+    @content;
+  }
+}
+
+@mixin responsive1279 {
+  @media (max-width: $responsive1279) {
+    @content;
+  }
+}
+
+@mixin responsive1023 {
+  @media (max-width: $responsive1023) {
+    @content;
+  }
+}
+
+@mixin responsive767 {
+  @media (max-width: $responsive767) {
+    @content;
+  }
+}
+
+@mixin responsive639 {
+  @media (max-width: $responsive639) {
+    @content;
+  }
+}
+
+@mixin responsive479 {
+  @media (max-width: $responsive479) {
+    @content;
+  }
+}
+
+@mixin responsive389 {
+  @media (max-width: $responsive389) {
+    @content;
+  }
+}

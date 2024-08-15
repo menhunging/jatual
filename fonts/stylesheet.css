@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Cormorant';
+    src: url('Cormorant-SemiBold.woff2') format('woff2'),
+        url('Cormorant-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('Cormorant-Bold.woff2') format('woff2'),
+        url('Cormorant-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('Cormorant-Medium.woff2') format('woff2'),
+        url('Cormorant-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Carolina';
+    src: url('Carolina.woff2') format('woff2'),
+        url('Carolina.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('Cormorant-Regular.woff2') format('woff2'),
+        url('Cormorant-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('Cormorant-Light.woff2') format('woff2'),
+        url('Cormorant-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaMediumC';
+    src: url('FuturaMediumC.woff2') format('woff2'),
+        url('FuturaMediumC.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('FuturaBookC.woff2') format('woff2'),
+        url('FuturaBookC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('Alegreya-ExtraBold.woff2') format('woff2'),
+        url('Alegreya-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

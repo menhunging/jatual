@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 19px 0;
+
+  .logo {
+    margin: 0 auto;
+    width: 96px;
+    height: 113px;
+
+    @include responsive767 {
+      width: 48px;
+      height: 56px;
+    }
+  }
+}

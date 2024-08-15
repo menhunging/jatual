@@ -1,0 +1,49 @@
+.btn {
+  -webkit-appearance: none;
+  border-radius: 0;
+  position: relative;
+  color: $colorBlack;
+  border: 1px solid transparent;
+  display: inline-block;
+  transition: all 0.3s;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  padding: 17px 51px;
+  font-family: $fontFuturaBookC;
+
+  @include responsive1023 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @include responsive767 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &--yellow {
+    color: $colorBlack;
+    border: solid 1px $colorYellow;
+    background-color: $colorYellow;
+
+    &:hover {
+    }
+  }
+
+  &--dark {
+    border: solid 1px $colorBlack;
+    color: $colorBlack;
+
+    &:hover {
+      background-color: $colorBlack;
+      color: $colorWhite;
+      transform: scale(1);
+    }
+  }
+}
