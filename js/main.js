@@ -125,23 +125,23 @@ $(document).ready(function () {
     });
   }
 
-  $("#site_form").on("submit", function (event) {
-    event.preventDefault();
+  if ($(".form-section").length > 0) {
+    $("#site_form").on("submit", function (event) {
+      event.preventDefault();
 
-    var formData = $(this).serialize();
-
-    $.ajax({
-      type: "POST",
-      url: "../form.php",
-      data: formData,
-      success: function (response) {
-        alert("Сообщение успешно отправлено!");
-      },
-      error: function () {
-        alert("Произошла ошибка при отправке сообщения.");
-      },
+      $.ajax({
+        type: "POST",
+        url: "http://127.0.0.1:5500/form.php",
+        data: $(this).serialize(),
+        success: function (response) {
+          console.log(responsive);
+        },
+        error: function (xhr, status, error) {
+          console.error(xhr.responseText);
+        },
+      });
     });
-  });
+  }
 
   if ($(".map").length > 0) {
     // initMap();
