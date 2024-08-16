@@ -41,8 +41,6 @@ $(document).ready(function () {
       } else {
         $(".swiper-controls__text.next").text("");
       }
-
-      console.log(prevText);
     });
 
     $(".swiper-controls__text.prev").on("click", function () {
@@ -72,7 +70,21 @@ $(document).ready(function () {
     });
   }
 
-  if ($(".video__btn--play").length > 0) {
+  if ($(".video").length > 0) {
+    const video = $("video");
+    const videoFile = $("video").attr("data-video");
+    const videoFileNext = $("video").attr("data-video-next");
+
+    video.on("ended", function () {
+      if ($("video").hasClass("next-video")) {
+        $("video").removeClass("next-video");
+        $("video").attr("src", videoFile);
+      } else {
+        $("video").addClass("next-video");
+        $("video").attr("src", videoFileNext);
+      }
+    });
+
     $(".video__btn--play").on("click", function () {
       let self = $(this);
 
@@ -146,12 +158,25 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".grettings__media").length > 0) {
+    let step = 1;
+    let count = $(".grettings__media").attr("data-count");
+
+    setInterval(function () {
+      if (step > count) {
+        step = 1;
+      }
+
+      $(".grettings__media source").attr("srcset", `./img/girl${step}.webp`);
+      $(".grettings__media img").attr("src", `./img/girl${step}.png`);
+      step++;
+    }, 5000);
+  }
+
   if ($(".map").length > 0) {
     // initMap();
   }
 });
-
-// $(window).on("resize", function () {});А
 
 // yandex map
 async function initMap() {

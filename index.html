@@ -38,17 +38,17 @@
       <section class="grettings">
         <div class="container">
           <div class="grettings__inner">
-            <picture class="grettings__media picture">
-              <source type="image/webp" srcset="./img/girl.webp" />
-              <img src="./img/girl.png" alt="" />
+            <picture class="grettings__media picture" data-count="3">
+              <source type="image/webp" srcset="./img/girl1.webp" />
+              <img src="./img/girl1.png" alt="" />ы
             </picture>
             <div class="grettings__content">
               <picture class="picture">
                 <source type="image/webp" srcset="./img/logo-gold.webp" />
                 <img src="./img/logo-gold.png" alt="" />
               </picture>
-              <span class="grettings__title">СКОРО ОТКРЫТИЕ</span>
-              <span class="grettings__desc">История бесконечной любви</span>
+              <!-- <span class="grettings__title">СКОРО ОТКРЫТИЕ</span>
+              <span class="grettings__desc">История бесконечной любви</span> -->
               <a href="#" class="btn btn--yellow">НАЗНАЧИТЬ ВСТРЕЧУ</a>
             </div>
           </div>
@@ -126,10 +126,11 @@
       <section class="video-about">
         <h2 class="caption">ВИДЕО О НАС</h2>
         <div class="video">
-          <video width="100%" height="100%" poster="./img/video-poster.webp" playsinline loop muted />
-          <source src="./img/video/video.webm" type='video/webm; codecs="vp8, vorbis"'>
+          <video width="100%" height="100%" poster="./img/video-poster.webp" autoplay playsinline muted
+            data-video="./img/video/video1.mp4" data-video-next="./img/video/video2.mp4" />
+          <source src="./img/video/video1.mp4" type="video/mp4">
           </video>
-          <div class="video__btn video__btn--play">
+          <!-- <div class="video__btn video__btn--play">
             <svg class="icon-play" width="33" height="38" viewBox="0 0 33 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -142,7 +143,7 @@
               <path fill="#fff"
                 d="M17.25 1.5V16.5C17.2495 16.8977 17.0914 17.279 16.8102 17.5602C16.529 17.8414 16.1477 17.9995 15.75 18H12.375C11.9773 17.9995 11.596 17.8414 11.3148 17.5602C11.0336 17.279 10.8755 16.8977 10.875 16.5V1.5C10.8755 1.10231 11.0336 0.721048 11.3148 0.439842C11.596 0.158636 11.9773 0.000454817 12.375 0H15.75C16.1477 0.000454817 16.529 0.158636 16.8102 0.439842C17.0914 0.721048 17.2495 1.10231 17.25 1.5ZM5.625 0H2.25C1.85231 0.000454817 1.47105 0.158636 1.18984 0.439842C0.908636 0.721048 0.750455 1.10231 0.75 1.5V16.5C0.750455 16.8977 0.908636 17.279 1.18984 17.5602C1.47105 17.8414 1.85231 17.9995 2.25 18H5.625C6.02269 17.9995 6.40395 17.8414 6.68516 17.5602C6.96636 17.279 7.12455 16.8977 7.125 16.5V1.5C7.12455 1.10231 6.96636 0.721048 6.68516 0.439842C6.40395 0.158636 6.02269 0.000454817 5.625 0Z" />
             </svg>
-          </div>
+          </div> -->
         </div>
       </section>
       <section class="form-section">
@@ -161,7 +162,7 @@
                 <input type="email" placeholder="E-MAIL" required name="email" value="">
               </div>
               <div class="input-item">
-                <input type="text" placeholder="ТЕЛЕФОН" class="phone-input" required name="" value="+7(123) 123-12-31">
+                <input type="text" placeholder="ТЕЛЕФОН" class="phone-input" required name="" value="">
               </div>
               <div class="input-item">
                 <input type="text" placeholder="ВАШ ВОПРОС" required name="message" value="">
@@ -181,32 +182,36 @@
           <ul>
             <li>
               <span class="cap">москва</span>
+              <span class="adress">Представительство в Москве</span>
               <span class="title">Контакты</span>
               <span>Телефон: <a href="tel:+79060713947">+ 7 (906) 071-39-47</a></span>
               <span>E-mail: <a href="mailto:info@jatual.fr">info@jatual.fr</a></span>
             </li>
             <li>
               <span class="cap">париж</span>
+              <!-- <span class="adress">центральный офис -
+                Дубаи
+                Platinum Tower , JLT , Dubai , UAE.</span> -->
               <span class="title">Контакты</span>
               <span>Телефон: <a href="tel:+34648726487">+3 (4648) 72-64-87</a></span>
               <span>E-mail: <a href="mailto:info@jatual.fr">info@jatual.fr</a></span>
             </li>
             <li>
               <span class="cap">дубай</span>
+              <span class="adress">центральный офис Дубаи:<br />
+                Platinum Tower , JLT , Dubai , UAE.</span>
               <span class="title">Контакты</span>
-              <span>Телефон: <a href="tel:+34648726487">+3 (4648) 72-64-87</a></span>
+              <span>Телефон: <a href="tel:+971585920990">+971 58 592 0990</a></span>
               <span>E-mail: <a href="mailto:info@jatual.fr">info@jatual.fr</a></span>
             </li>
           </ul>
         </div>
-
-        <div class="map">
+        <!-- <div class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577332.5659375489!2d36.726215352370396!3d55.58103354740963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sby!4v1723737144873!5m2!1sru!2sby"
             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
+        </div> -->
       </section>
       <section class="coop-section">
         <h2 class="caption">ПО ВОПРОСАМ СОТРУДНИЧЕСТВА</h2>

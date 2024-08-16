@@ -8,6 +8,10 @@
   justify-content: center;
   overflow: hidden;
 
+  @include responsive1279 {
+    min-height: 530px;
+  }
+
   @include responsive1023 {
     min-height: 490px;
   }
@@ -20,21 +24,21 @@
     min-height: inherit;
   }
 
-  &__inner {
-    position: relative;
-  }
-
   &__media {
     width: 595px;
     height: 630px;
     position: absolute;
-    left: 0;
-    bottom: -105px;
+    left: calc(50% - 600px);
+    bottom: 0;
 
     @include responsive1279 {
-      left: -20px;
-      width: 416px;
+      width: 456px;
       height: 490px;
+      left: calc(50% - 456px);
+    }
+
+    @include responsive1023 {
+      left: calc(50% - 395px);
     }
 
     @include responsive767 {
@@ -45,6 +49,11 @@
       height: auto;
       display: block;
       padding-top: calc(390 / 326 * 100%);
+    }
+
+    img {
+      object-fit: contain;
+      object-position: bottom;
     }
   }
 
@@ -944,7 +953,6 @@
     font-size: 28px;
     font-weight: 500;
     line-height: 33px;
-    margin-bottom: 50px;
     color: $colorBlack;
     text-transform: uppercase;
 
@@ -954,7 +962,6 @@
     }
 
     @include responsive767 {
-      margin-bottom: 20px;
       font-size: 18px;
       line-height: 20px;
     }
@@ -967,6 +974,7 @@
     line-height: 18px;
     margin-bottom: 14px;
     color: $colorBlack;
+    margin-top: auto;
 
     @include responsive767 {
       font-size: 14px;
@@ -974,9 +982,18 @@
     }
   }
 
+  .adress {
+    margin-top: 0;
+    margin-bottom: 50px;
+    max-width: 210px;
+
+    @include responsive767 {
+      margin-bottom: 20px;
+    }
+  }
+
   ul {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-top: 82px;
 
@@ -993,6 +1010,7 @@
 
     @include responsive767 {
       width: 100%;
+      min-height: 140px;
     }
 
     span {
@@ -1068,7 +1086,7 @@
     font-size: 18px;
     line-height: 22px;
     gap: 20px;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 50px;
     background-position: calc(50% + 151px) 40px;
     background-size: 240%;
