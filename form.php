@@ -10,10 +10,11 @@ $text = clear_data($_POST['message']);
 $subject = "Сообщение с сайта";
 
 $headers = [
-	"From" => "webmaster@site.ru",
-	"Reply-To" => "webmaster@site.ru",
-	"X-Mailer" => "PHP/" . phpversion(),
-	"Content-type" => "text/html; charset=utf-8"
+	"From: jatual.ru",
+	"Reply-To: jatual.ru",
+	"X-Mailer: PHP/" . phpversion(),
+	"MIME-Version: 1.0",
+	"Content-type: text/html; charset=utf-8"
 ];
 
 // Преобразуем массив заголовков в строку
