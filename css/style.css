@@ -2248,6 +2248,7 @@ h4,
 @media (max-width: 767px) {
   .map-section .adress {
     margin-bottom: 20px;
+    max-width: 100%;
   }
 }
 .map-section ul {
