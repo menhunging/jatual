@@ -129,19 +129,21 @@ $(document).ready(function () {
     $("#site_form").on("submit", function (event) {
       event.preventDefault();
 
+      let formData = $(this).serialize();
+
       $.ajax({
+        url: "./form.php",
         type: "POST",
-        url: "../form.php",
-        data: $(this).serialize(),
+        data: formData,
         success: function (response) {
-          console.log(responsive);
+          MicroModal.show("modal-success");
+          $(".form-section input").val("");
         },
-        error: function (xhr, status, error) {
-          console.error(xhr.responseText);
+        error: function (error) {
+          console.error(error);
         },
       });
     });
-    ``;
   }
 
   if ($(".map").length > 0) {
