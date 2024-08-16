@@ -2165,8 +2165,8 @@ h4,
 @media (max-width: 767px) {
   .map-section {
     padding: 60px 15px;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 .map-section .container {
@@ -2200,8 +2200,8 @@ h4,
 }
 @media (max-width: 767px) {
   .map-section .caption {
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 26px;
   }
 }
 .map-section .cap {
@@ -2220,8 +2220,8 @@ h4,
 }
 @media (max-width: 767px) {
   .map-section .cap {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 24px;
     margin-bottom: 5px;
   }
 }
