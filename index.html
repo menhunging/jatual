@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
-  <title>Главная</title>
+  <title>JATUAL PARIS</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
@@ -38,7 +38,7 @@
       <section class="grettings">
         <div class="container">
           <div class="grettings__inner">
-            <picture class="grettings__media picture" data-count="3">
+            <picture class="grettings__media picture" data-count="5">
               <source type="image/webp" srcset="./img/girl1.webp" />
               <img src="./img/girl1.png" alt="" />ы
             </picture>
@@ -49,7 +49,7 @@
               </picture>
               <!-- <span class="grettings__title">СКОРО ОТКРЫТИЕ</span>
               <span class="grettings__desc">История бесконечной любви</span> -->
-              <a href="#" class="btn btn--yellow">НАЗНАЧИТЬ ВСТРЕЧУ</a>
+              <a href="#" class="btn btn--yellow" data-modal="modal-form">НАЗНАЧИТЬ ВСТРЕЧУ</a>
             </div>
           </div>
         </div>
@@ -59,40 +59,86 @@
         </picture>
       </section>
       <section class="product">
+        <h2 class="caption">ОТКРОЙТЕ ДЛЯ СЕБЯ КРАСОТУ JATUAL PARIS</h2>
+
         <section class="product-slider swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide" data-title="СЕРЬГИ">
               <picture class="picture">
-                <source type="image/webp" srcset="./img/product1.webp" />
-                <img src="./img/product1.png" alt="" />
+                <!-- <source type="image/webp" srcset="./img/product1.webp" /> -->
+                <img src="./img/product1.jpg" alt="" />
               </picture>
             </div>
-            <div class="swiper-slide" data-title="Кольца">
+            <div class="swiper-slide" data-title="СЕРЬГИ">
               <picture class="picture">
-                <source type="image/webp" srcset="./img/product2.webp" />
-                <img src="./img/product2.png" alt="" />
+                <!-- <source type="image/webp" srcset="./img/product1.webp" /> -->
+                <img src="./img/product2.jpg" alt="" />
               </picture>
             </div>
-            <div class="swiper-slide" data-title="ПОДВЕСКИ">
+            <div class="swiper-slide" data-title="СЕРЬГИ">
               <picture class="picture">
-                <source type="image/webp" srcset="./img/product3.webp" />
-                <img src="./img/product3.png" alt="" />
+                <!-- <source type="image/webp" srcset="./img/product1.webp" /> -->
+                <img src="./img/product3.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide" data-title="СЕРЬГИ">
+              <picture class="picture">
+                <!-- <source type="image/webp" srcset="./img/product1.webp" /> -->
+                <img src="./img/product4.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide" data-title="СЕРЬГИ">
+              <picture class="picture">
+                <!-- <source type="image/webp" srcset="./img/product1.webp" /> -->
+                <img src="./img/product5.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide" data-title="СЕРЬГИ">
+              <picture class="picture">
+                <!-- <source type="image/webp" srcset="./img/product1.webp" /> -->
+                <img src="./img/product6.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide" data-title="СЕРЬГИ">
+              <picture class="picture">
+                <!-- <source type="image/webp" srcset="./img/product1.webp" /> -->
+                <img src="./img/product7.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide" data-title="СЕРЬГИ">
+              <picture class="picture">
+                <!-- <source type="image/webp" srcset="./img/product1.webp" /> -->
+                <img src="./img/product8.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide" data-title="СЕРЬГИ">
+              <picture class="picture">
+                <!-- <source type="image/webp" srcset="./img/product1.webp" /> -->
+                <img src="./img/product9.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide" data-title="СЕРЬГИ">
+              <picture class="picture">
+                <!-- <source type="image/webp" srcset="./img/product1.webp" /> -->
+                <img src="./img/product10.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="swiper-slide" data-title="СЕРЬГИ">
+              <picture class="picture">
+                <!-- <source type="image/webp" srcset="./img/product1.webp" /> -->
+                <img src="./img/product11.jpg" alt="" />
               </picture>
             </div>
           </div>
-          <div class="swiper-fractions"></div>
         </section>
         <div class="swiper-controls">
           <button class="swiperBtnPrev"></button>
-          <span class="swiper-controls__text prev">СЕРЬГИ</span>
-          <span class="swiper-controls__text next">ПОДВЕСКИ</span>
           <button class="swiperBtnNext"></button>
         </div>
       </section>
       <section class="text-section">
         <div class="text-section__content">
           <span class="text-invis text-invis--jarual"></span>
-          <h2 class="caption">ОТКРОЙТЕ ДЛЯ СЕБЯ КРАСОТУ JATUAL PARIS</h2>
           <p>
             Мы предлагаем уникальные возможности, которые переходят границы обычного ювелирного мира. У нас есть
             способность создать камень мечты с самыми высокими природными характеристиками и воплотить украшение вашей
@@ -125,10 +171,9 @@
       </section>
       <section class="video-about">
         <h2 class="caption">ВИДЕО О НАС</h2>
-        <div class="video">
-          <video width="100%" height="100%" poster="./img/video-poster.webp" autoplay playsinline muted
-            data-video="./img/video/video1.mp4" data-video-next="./img/video/video2.mp4" />
-          <source src="./img/video/video1.mp4" type="video/mp4">
+        <div class="video" data-count="4">
+          <video width="100%" height="100%" poster="./img/video-poster.webp" autoplay playsinline muted>
+            <source src="./img/video/video1.mp4" type="video/mp4" />
           </video>
           <!-- <div class="video__btn video__btn--play">
             <svg class="icon-play" width="33" height="38" viewBox="0 0 33 38" fill="none"
@@ -182,17 +227,14 @@
           <ul>
             <li>
               <span class="cap">париж</span>
-              <!-- <span class="adress">центральный офис -
-                Дубаи
-                Platinum Tower , JLT , Dubai , UAE.</span> -->
+              <span class="adress">офис</span>
               <span class="title">Контакты</span>
               <span>Телефон: <a href="tel:+34648726487">+3 (4648) 72-64-87</a></span>
               <span>E-mail: <a href="mailto:info@jatual.fr">info@jatual.fr</a></span>
             </li>
             <li>
               <span class="cap">дубай</span>
-              <span class="adress">центральный офис<br />
-                Platinum Tower , JLT , Dubai , UAE.</span>
+              <span class="adress">Центральный офис,<br /> Platinum Tower , JLT , Dubai , UAE.</span>
               <span class="title">Контакты</span>
               <span>Телефон: <a href="tel:+971585920990">+971 58 592 0990</a></span>
               <span>E-mail: <a href="mailto:info@jatual.fr">info@jatual.fr</a></span>
@@ -259,6 +301,57 @@
             <div class="modal-custom">
               <h2 class="caption modals-caption">Спасибо</h2>
               <p>Какой то текст</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="micromodal-slide modal" id="modal-form" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"
+                fill="black" />
+            </svg>
+
+          </button>
+          <div class="modal__content" autocomplete="off">
+            <div class="modal-custom">
+              <section class="form-section">
+                <div class="container">
+                  <form id="site_form_popup" method="post" class="form-section__left">
+                    <h2 class="caption">Назначить встречу</h2>
+                    <p>
+                      Для получения более подробной информации напишите нам и мы ответим Вам в ближайшее время. возможно
+                      кратчайшие сроки
+                    </p>
+                    <div class="input-list">
+                      <div class="input-item">
+                        <input type="text" placeholder="ИМЯ" required name="name" value="">
+                      </div>
+                      <div class="input-item">
+                        <input type="email" placeholder="E-MAIL" required name="email" value="">
+                      </div>
+                      <div class="input-item">
+                        <input type="text" placeholder="ТЕЛЕФОН" class="phone-input" required name="phone" value="">
+                      </div>
+                      <div class="input-item">
+                        <input type="text" placeholder="ВАШ ВОПРОС" required name="message" value="">
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn--dark">ОТПРАВИТЬ</button>
+                  </form>
+                  <picture class="picture">
+                    <source type="image/webp" srcset="./img/paris.webp" />
+                    <img src="./img/paris.png" alt="" />
+                  </picture>
+                </div>
+              </section>
             </div>
           </div>
         </div>

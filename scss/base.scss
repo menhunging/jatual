@@ -730,6 +730,20 @@ div {
       }
     }
   }
+
+  .form-section{
+    padding: 30px;
+    margin: 0;
+    overflow: hidden;
+
+    .btn{
+      height: auto;
+    }
+  }
+}
+
+#modal-form .modal__content{
+  padding: 0;
 }
 
 @media (min-width: 1200px) {

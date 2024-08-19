@@ -6,17 +6,13 @@ $(document).ready(function () {
       initialSlide: 1,
       centeredSlides: true,
       watchSlidesProgress: true,
-      loop: false,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
       navigation: {
         prevEl: ".product .swiperBtnPrev",
         nextEl: ".product .swiperBtnNext",
-      },
-      pagination: {
-        el: ".swiper-fractions",
-        type: "custom",
-        renderCustom: function (swiper, current, total) {
-          return `<span class="cur"><span>0${current}</span></span> / <span class="tot">${total}</span>`;
-        },
       },
       breakpoints: {
         0: {
@@ -24,30 +20,6 @@ $(document).ready(function () {
           spaceBetween: 0,
         },
       },
-    });
-
-    swiper.on("slideChangeTransitionStart", function () {
-      let prevText = $(".product-slider .swiper-slide-prev").attr("data-title");
-      let nextText = $(".product-slider .swiper-slide-next").attr("data-title");
-
-      if (prevText) {
-        $(".swiper-controls__text.prev").text(prevText);
-      } else {
-        $(".swiper-controls__text.prev").text("");
-      }
-
-      if (nextText) {
-        $(".swiper-controls__text.next").text(nextText);
-      } else {
-        $(".swiper-controls__text.next").text("");
-      }
-    });
-
-    $(".swiper-controls__text.prev").on("click", function () {
-      swiper.slidePrev();
-    });
-    $(".swiper-controls__text.next").on("click", function () {
-      swiper.slideNext();
     });
   }
 
@@ -72,17 +44,17 @@ $(document).ready(function () {
 
   if ($(".video").length > 0) {
     const video = $("video");
-    const videoFile = $("video").attr("data-video");
-    const videoFileNext = $("video").attr("data-video-next");
+    let step = 1;
+    let count = $(".video-about .video").attr("data-count");
 
     video.on("ended", function () {
-      if ($("video").hasClass("next-video")) {
-        $("video").removeClass("next-video");
-        $("video").attr("src", videoFile);
-      } else {
-        $("video").addClass("next-video");
-        $("video").attr("src", videoFileNext);
+      step++;
+
+      if (step > count) {
+        step = 1;
       }
+
+      $(".video-about video").attr("src", `./img/video/video${step}.mp4`);
     });
 
     $(".video__btn--play").on("click", function () {
@@ -148,6 +120,26 @@ $(document).ready(function () {
         type: "POST",
         data: formData,
         success: function (response) {
+          MicroModal.show("modal-success");
+          $(".form-section input").val("");
+        },
+        error: function (error) {
+          console.error(error);
+        },
+      });
+    });
+
+    $("#site_form_popup").on("submit", function (event) {
+      event.preventDefault();
+
+      let formData = $(this).serialize();
+
+      $.ajax({
+        url: "./form.php",
+        type: "POST",
+        data: formData,
+        success: function (response) {
+          MicroModal.hide("modal-form");
           MicroModal.show("modal-success");
           $(".form-section input").val("");
         },
