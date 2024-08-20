@@ -139,7 +139,7 @@ $(document).ready(function () {
         type: "POST",
         data: formData,
         success: function (response) {
-          MicroModal.hide("modal-form");
+          MicroModal.close("modal-form");
           MicroModal.show("modal-success");
           $(".form-section input").val("");
         },

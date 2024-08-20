@@ -1966,6 +1966,7 @@ h4,
   font-weight: 500;
   line-height: 42px;
   text-align: center;
+  text-transform: uppercase;
 }
 @media (max-width: 1279px) {
   .video-about .caption {

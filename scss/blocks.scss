@@ -696,6 +696,7 @@
     font-weight: 500;
     line-height: 42px;
     text-align: center;
+    text-transform: uppercase;
 
     @include responsive1279 {
       font-size: 26px;
