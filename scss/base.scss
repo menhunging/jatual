@@ -5,6 +5,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  max-width: 1920px;
+  margin: auto;
 
   @include responsive1279 {
     font-size: 12px;
@@ -731,18 +733,18 @@ div {
     }
   }
 
-  .form-section{
+  .form-section {
     padding: 30px;
     margin: 0;
     overflow: hidden;
 
-    .btn{
+    .btn {
       height: auto;
     }
   }
 }
 
-#modal-form .modal__content{
+#modal-form .modal__content {
   padding: 0;
 }
 

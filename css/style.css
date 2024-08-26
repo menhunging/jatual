@@ -205,6 +205,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  max-width: 1920px;
+  margin: auto;
 }
 @media (max-width: 1279px) {
   body {
@@ -1267,13 +1269,29 @@ h4,
 @media (max-width: 767px) {
   .grettings__media {
     position: relative;
-    left: -12px;
-    bottom: auto;
-    width: calc(100% + 24px);
+    width: 100%;
     height: auto;
-    display: block;
-    padding-top: 119.6319018405%;
+    left: -12px;
+    width: calc(100% + 24px);
   }
+}
+.grettings__media .swiper-slide {
+  position: relative;
+  padding-top: 119.6319018405%;
+}
+.grettings__media .swiper-slide .picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.grettings__media .swiper-slide .picture img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .grettings__media img {
   object-fit: cover;
@@ -1784,9 +1802,9 @@ h4,
   position: relative;
   padding: 100px 0;
   text-align: center;
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 42px;
   text-align: center;
   margin-top: 184px;
 }
@@ -1808,7 +1826,7 @@ h4,
   }
 }
 .quote p {
-  max-width: 550px;
+  max-width: 660px;
   margin: 0 auto;
 }
 @media (max-width: 1023px) {
@@ -2126,6 +2144,8 @@ h4,
 }
 .form-section p {
   max-width: 570px;
+  font-size: 20px;
+  line-height: 24px;
 }
 @media (max-width: 1279px) {
   .form-section p {
@@ -2263,9 +2283,9 @@ h4,
 }
 .map-section .title {
   font-family: "FuturaBookC";
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 20px;
   margin-bottom: 14px;
   color: rgb(33, 33, 33);
   margin-top: auto;
@@ -2280,6 +2300,8 @@ h4,
   margin-top: 0;
   margin-bottom: 50px;
   max-width: 210px;
+  font-size: 18px;
+  line-height: 24px;
 }
 @media (max-width: 767px) {
   .map-section .adress {
@@ -2302,6 +2324,8 @@ h4,
   display: flex;
   flex-direction: column;
   color: #7b7b7b;
+  font-size: 20px;
+  line-height: 24px;
 }
 @media (max-width: 767px) {
   .map-section li {

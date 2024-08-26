@@ -6,7 +6,7 @@ $(document).ready(function () {
       initialSlide: 1,
       centeredSlides: true,
       watchSlidesProgress: true,
-      loop: true,
+      loop: false,
       autoplay: {
         delay: 5000,
       },
@@ -151,18 +151,19 @@ $(document).ready(function () {
   }
 
   if ($(".grettings__media").length > 0) {
-    let step = 1;
-    let count = $(".grettings__media").attr("data-count");
-
-    setInterval(function () {
-      if (step > count) {
-        step = 1;
-      }
-
-      $(".grettings__media source").attr("srcset", `./img/girl${step}.webp`);
-      $(".grettings__media img").attr("src", `./img/girl${step}.png`);
-      step++;
-    }, 5000);
+    const swiper = new Swiper(".grettings__media", {
+      slidesPerView: 1,
+      watchSlidesProgress: true,
+      loop: true,
+      allowTouchMove: false,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
+      autoplay: {
+        delay: 5000,
+      },
+    });
   }
 
   if ($(".map").length > 0) {
