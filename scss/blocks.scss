@@ -190,7 +190,7 @@
   @include before {
     width: 100%;
     height: 297px;
-    // background-color: $colorGray;
+    background-color: $colorGray;
     top: 50%;
     transform: translateY(-50%);
 
@@ -357,6 +357,10 @@
       @include responsive767 {
         width: 102px;
         height: 104px;
+      }
+
+      img{
+        object-fit: contain;
       }
     }
   }
@@ -1052,7 +1056,7 @@
 
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 82px;
 
     @include responsive767 {
