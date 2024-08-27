@@ -359,7 +359,7 @@
         height: 104px;
       }
 
-      img{
+      img {
         object-fit: contain;
       }
     }
@@ -961,6 +961,7 @@
 }
 
 .map-section {
+  position: relative;
   padding: 120px 0;
 
   @include responsive1279 {
@@ -968,12 +969,31 @@
   }
 
   @include responsive767 {
-    padding: 60px 15px;
+    padding: 60px 15px 150px;
     font-size: 18px;
     line-height: 22px;
   }
 
+  &__media {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    @include responsive1279 {
+      left: calc(50% - 105px);
+      transform: translateY(-32%);
+    }
+
+    @include responsive767{
+      left: calc(50% - 110px);
+      opacity: .55;
+    }
+  }
+
   .container {
+    position: relative;
     max-width: 1544px;
 
     @include responsive1599 {
@@ -1058,6 +1078,10 @@
     display: flex;
     justify-content: center;
     margin-top: 82px;
+
+    @include responsive1279 {
+      justify-content: flex-start;
+    }
 
     @include responsive767 {
       flex-direction: column;
