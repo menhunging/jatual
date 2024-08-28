@@ -200,16 +200,16 @@
 
     @include responsive1279 {
       height: 230px;
-      top: 40%;
+      top: 50%;
     }
 
     @include responsive1023 {
       height: 156px;
-      top: 45%;
     }
 
     @include responsive767 {
       height: 122px;
+      top: 55%;
     }
   }
 
@@ -233,11 +233,17 @@
     @include responsive1279 {
       width: 363px;
       height: 286px;
+      margin-top: 80px;
     }
 
     @include responsive1023 {
       width: 246px;
       height: 286px;
+      margin-top: 30px;
+    }
+
+    @include responsive767 {
+      margin-top: 0;
     }
 
     .swiper-slide {
@@ -249,10 +255,14 @@
       &.swiper-slide-active {
         .picture {
           width: 100%;
-          height: 615px;
+          height: 470px;
+
+          @include responsive1439 {
+            height: 390px;
+          }
 
           @include responsive1279 {
-            height: 419px;
+            height: 350px;
           }
 
           @include responsive1023 {
@@ -340,9 +350,14 @@
     }
 
     .picture {
-      width: 251px;
-      height: 301px;
+      width: 235px;
+      height: 260px;
       transition: all 0.3s;
+
+      @include responsive1439 {
+        width: 215px;
+        height: 220px;
+      }
 
       @include responsive1279 {
         width: 188px;
@@ -355,7 +370,7 @@
       }
 
       @include responsive767 {
-        width: 102px;
+        width: 122px;
         height: 104px;
       }
 
@@ -986,9 +1001,9 @@
       transform: translateY(-32%);
     }
 
-    @include responsive767{
+    @include responsive767 {
       left: calc(50% - 110px);
-      opacity: .55;
+      opacity: 0.55;
     }
   }
 
