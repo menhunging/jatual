@@ -7,9 +7,9 @@ $(document).ready(function () {
       centeredSlides: true,
       watchSlidesProgress: true,
       loop: false,
-      // autoplay: {
-      //   delay: 5000,
-      // },
+      autoplay: {
+        delay: 5000,
+      },
       navigation: {
         prevEl: ".product .swiperBtnPrev",
         nextEl: ".product .swiperBtnNext",
