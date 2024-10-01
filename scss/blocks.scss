@@ -1232,3 +1232,25 @@
     max-width: 500px;
   }
 }
+
+.pdf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  @include responsive767 {
+    gap: 20px;
+  }
+
+  picture {
+    width: 100%;
+
+    img {
+      position: relative;
+      height: auto;
+      width: auto;
+    }
+  }
+}

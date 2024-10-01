@@ -2493,4 +2493,25 @@ h4,
   max-width: 500px;
 }
 
+.pdf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+@media (max-width: 767px) {
+  .pdf {
+    gap: 20px;
+  }
+}
+.pdf picture {
+  width: 100%;
+}
+.pdf picture img {
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
